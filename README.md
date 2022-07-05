@@ -1,19 +1,19 @@
-# Bus-Trip-API
+# Final Project Java Springboot - Bus Trip API
 Final Project Java Springboot in BTDP feat Hactiv8 batch 1. A project REST API about Bus Trip, the result is Accessable End-Point API
-
-#Final Project Java Springboot
-##Bus Trip API
 
 <br>
 
-##Informasi Dasar
-Aplikasi Bus Trip API adalah sebuah Final Project dari `BFI Technology Development Program (BTDP) feat Hactiv8 using Java Springboot`, aplikasi ini terfokus pada bagaimana cara kerja API dan membuat End Point API, yang dibuat oleh
-Nama		 : `Arrifqi Aziz Ardhiansyah`
+## Informasi Dasar
+Aplikasi Bus Trip API adalah sebuah Final Project dari `BFI Technology Development Program (BTDP) feat Hactiv8 using Java Springboot`, aplikasi ini terfokus pada bagaimana cara kerja API dan membuat End Point API, yang dibuat oleh\
+Nama		 : `Arrifqi Aziz Ardhiansyah`\
 Kode Peserta : `JVSB001ONL009`
 
 <br>
 
-##Panduan Penggunaan Aplikasi
+## Screenshot Aplikasi
+[Screenshot API](https://github.com/arrifqiaziz/Bus-Trip-API/tree/main/Screenshot%20Swagger)
+
+## Panduan Penggunaan Aplikasi
 
 1. Masuk ke Home / Welcome
 2. Masuk ke Swagger untuk masuk ke API 
@@ -32,13 +32,13 @@ http://localhost:8080/swagger-ui.html#/
    b. Ketik `Bearer isitoken` pada value
 6. Jika Token benar, login sukses dan Api dapat dijalankan
 
-#Penjelasan Role
+# Penjelasan Role
 Admin dapat menjalankan semua API (Get, Post, Put, Delete)
 User hanya dapat menjalankan API GET dan Post pada Trip
 
 <br>
 
-##End Point API
+## End Point API
 1. Agency Controller
 2. Auth Controller
 3. Bus Controller
@@ -50,9 +50,9 @@ User hanya dapat menjalankan API GET dan Post pada Trip
 
 <br>
 
-##Penjelasan End Point API
+## Penjelasan End Point API
 
-###Agency Controller
+### Agency Controller
 Agensi Bus adalah agen atau perusahaan yang menyediakan jasa transportasi bus
 - `POST /api/v1/agency/` 		-> Input Data Agency
 - `GET /api/v1/agency/`			-> Output All Data Agency
@@ -68,7 +68,7 @@ Penjelasan Form Post Agency
 
 <br>
 
-###Auth Controller
+### Auth Controller
 Untuk autentikasi login, dengan mendapatkan token
 - `POST /api/auth` 	-> Get Token
 
@@ -78,7 +78,7 @@ password	: Password user
 
 <br>
 
-###Bus Controller
+### Bus Controller
 Unit bus secara detail dijelaskan disini
 - `POST /api/v1/bus/{id}`		-> Input Data Bus by ID
 - `GET /api/v1/bus/`			-> Output All Data Bus
@@ -94,7 +94,7 @@ make		: Memuat berapa penumpang
 
 <br>
 
-###Stop Controller
+### Stop Controller
 Tempat Pemberhentian (untuk Keberangkatan dan juga Tujuan)
 - `POST /api/v1/stop/`			-> Input Data Stop
 - `GET /api/v1/stop/`			-> Output All Data Stop
@@ -112,7 +112,7 @@ name		: Nama Tempat
 
 <br>
 
-###Ticket Controller
+### Ticket Controller
 Pembelian tiket dan pengisian data perjalanan
 - `POST /api/v1/bus/`			-> Input Data Tiket by ID
 - `GET /api/v1/bus/`			-> Output All Data Tiket
@@ -129,7 +129,7 @@ tripScheduleId : ID Jadwal Perjalanan
 
 <br>
 
-###Trip Controller
+### Trip Controller
 Data Perjalanan
 - `POST /api/v1/trip/`			-> Input Data Trip by ID
 - `GET /api/v1/trip/`			-> Output All Data Trip
@@ -147,7 +147,7 @@ sourceStopId: ID Tempat Pemberhentian
 
 <br>
 
-###Trip Schedule Controller
+### Trip Schedule Controller
 Jadwal Perjalanan Bus
 - `POST /api/v1/trip_schedule/`		-> Input Data Jadwal Trip by ID
 - `GET /api/v1/trip_schedule/`		-> Output All Data Jadwal Trip
@@ -162,7 +162,7 @@ trip_detail		: Detail Perjalanan
 
 <br>
 
-###User Controller
+### User Controller
 Setiap orang yang akan registrasi/update data
 - `POST /api/v1/user/signup`			-> Input Data User (Daftar)
 - `PUT /api/v1/user/{id}`			-> Edit Data User by ID
@@ -203,7 +203,7 @@ fahmi123	hoiri123	dessy123
 
 <br>
 
-###Welcome Controller
+### Welcome Controller
 Untuk Landing page belum
 
 
